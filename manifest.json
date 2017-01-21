@@ -1,23 +1,30 @@
 {
   "manifest_version": 2,
-
   "name": "Cares Not Shares",
-  "description": "If you can't change it, empower those who can.",
   "version": "1.0",
 
-  "permissions": [
-    "https://www.facebook.com/",
-    "http://www.facebook.com/",
-    "tabs", "http://*/*", "https://*/*"
-  ],
-
+  "description": "Matching those who want to make the world a better place with those who are.",
   "icons": {
     "128": "image/icon.png"
-  },
+    },
 
   "browser_action": {
-      "default_title": "Set this page's color.",
+      "default_title": "Cares Not Shares",
       "default_icon": "image/icon.png",
-      "default_popup": "popup.html"
+      "default_popup": "card.html"
+  },
+
+  "permissions": [
+        "https://www.facebook.com/",
+        "http://www.facebook.com/",
+        "tabs",
+        "storage"
+  ],
+
+  "author": "Linda Lay, Kalib Watson, Katie Musial",
+
+  "background": {
+    "scripts": ["js/bootstrap.min.js"],
+    "persistent": false
   }
 }
