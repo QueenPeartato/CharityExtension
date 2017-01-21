@@ -1,5 +1,7 @@
 // Our directory of charities, in JSON format
 
+// Link to site with charities (working from bottom of list): https://topnonprofits.com/lists/best-nonprofits-on-the-web/
+
 var charities = [{
 	"name" : "Food & Water Watch",
 	"website" : "http://www.foodandwaterwatch.org",
@@ -25,10 +27,40 @@ var charities = [{
 },
 
 {
-	"name" : "Seattle Children's Hospital",
-	"website" : "http://www.seattlechildrens.org",
-	"key" : "children", "healthcare", "patients", "family", "child", "medical", 
+	"name" : "Mozilla",
+	"website" : "https://www.mozilla.org/en-US/",
+	"key" : "internet", "innovation", "web", "mozilla", "web", "health", 
+},
+
+{
+	"name" : "American Cancer Society",
+	"website" : "http://www.cancer.org",
+	"key" : "cancer", "health care", "health", "treatment", "patients", 
+},
+
+{
+	"name" : "Stand Up 2 Cancer",
+	"website" : "http://www.standup2cancer.org",
+	"key" : "cancer", "health care", "health", "treatment", "patients",  
+},
+
+{
+	"name" : "Leukemia and Lymphoma Society",
+	"website" : "http://www.lls.org",
+	"key" : "cancer", "health care", "health", "treatment", "patients", "leukemia", "lymphoma",
+},
+
+{
+	"name" : "Acumen",
+	"website" : "http://acumen.org",
+	"key" : "poverty", "poor", "money", "lower class", "leader", 
 },
 
 }];
+
+
+
+
+
+
 
