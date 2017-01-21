@@ -1,87 +1,30 @@
-/*MANIFEST - this tells Chrome what is in our extension.
-
-I copy pasted this from the Chrome Developer site*/
-
 {
   "manifest_version": 2,
-  "name": "CaresNotShares",
-  "version": "1.0.0.1",
+  "name": "Cares Not Shares",
+  "version": "1.0",
 
-  "default_locale": "en",
   "description": "Matching those who want to make the world a better place with those who are.",
-  "icons": {...}, /*Put the icon here*/
+  "icons": {
+    "128": "image/icon.png"
+    },
 
-  "page_action": {
-    "default_title": "Make Facebook Great Again",
-    "default_icon": "images/icon.png",
-    "default_popup": "popup.html",
+  "browser_action": {
+      "default_title": "Cares Not Shares",
+      "default_icon": "image/icon.png",
+      "default_popup": "card.html"
   },
+
+  "permissions": [
+        "https://www.facebook.com/",
+        "http://www.facebook.com/",
+        "tabs",
+        "storage"
+  ],
 
   "author": "Linda Lay, Kalib Watson, Katie Musial",
 
   "background": {
-    "scripts": ["bootstrap.js"],
+    "scripts": ["js/bootstrap.min.js"],
     "persistent": false
-  },
-
-  "content_scripts": [
-   {
-     "matches": ["http://*.facebook.com/*", "https://*.facebook.com/*"],
-     "js": ["libs/underscore.min.js", "clean.js"]
-   }
- ],
-
-  /*"devtools_page": "devtools.html",
-  "event_rules": [{...}],
-
-  "file_browser_handlers": [...],
-  "file_system_provider_capabilities": {
-    "configurable": true,
-    "multiple_mounts": true,
-    "source": "network"
-  },
-
-  "homepage_url": "http://path/to/homepage",
-  "import": [{"id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}],
-  "incognito": "spanning, split, or not_allowed",
-  "input_components": ...,
-  "key": "publicKey",
-  "minimum_chrome_version": "versionString",
-  "nacl_modules": [...],
-  "oauth2": ...,
-  "offline_enabled": true,
-  "omnibox": {
-    "keyword": "aString"
-  },
-
-  "optional_permissions": ["tabs"],
-  "options_page": "options.html",
-  "options_ui": {
-    "chrome_style": true,
-    "page": "options.html"
-  },*/
-
-  "permissions": [
-    "https://www.facebook.com/",
-    "http://www.facebook.com/",
-    "tabs",
-    "storage"
-  ],
-
-  /*"platforms": ...,
-  "plugins": [...],
-  "requirements": {...},
-  "sandbox": [...],
-  "short_name": "Short Name",
-  "signature": ...,
-  "spellcheck": ...,
-  "storage": {
-    "managed_schema": "schema.json"
-  },
-
-  "system_indicator": ...,
-  "tts_engine": {...},
-  "update_url": "http://path/to/updateInfo.xml",
-  "version_name": "aString",
-  "web_accessible_resources": [...]*/
+  }
 }
