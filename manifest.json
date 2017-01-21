@@ -1,91 +1,23 @@
-/*MANIFEST - this tells Chrome what is in our extension.
-
-I copy pasted this from the Chrome Developer site*/
-
 {
-  /*Required*/
   "manifest_version": 2,
-  "name": "My Extension",
-  "version": "versionString",
 
-  Recommended
-  "default_locale": "en",
-  "description": "A plain text description",
-  "icons": {...},
+  "name": "Cares Not Shares",
+  "description": "If you can't change it, empower those who can.",
+  "version": "1.0",
 
-  "page_action": {...},
+  "permissions": [
+    "https://www.facebook.com/",
+    "http://www.facebook.com/",
+    "tabs", "http://*/*", "https://*/*"
+  ],
 
-  "author": ...,
-  "automation": ...,
-
-  "background": {
-    "persistent": false
+  "icons": {
+    "128": "image/icon.png"
   },
 
-  "background_page": ...,
-  "chrome_settings_overrides": {...},
-  "chrome_ui_overrides": {
-    "bookmarks_ui": {
-      "remove_bookmark_shortcut": true,
-      "remove_button": true
-    }
-  },
-
-  "chrome_url_overrides": {...},
-  "commands": {...},
-  "content_capabilities": ...,
-  "content_scripts": [{...}],
-  "content_security_policy": "policyString",
-  "converted_from_user_script": ...,
-  "current_locale": ...,
-  "devtools_page": "devtools.html",
-  "event_rules": [{...}],
-  "externally_connectable": {
-    "matches": ["*://*.example.com/*"]
-  },
-
-  "file_browser_handlers": [...],
-  "file_system_provider_capabilities": {
-    "configurable": true,
-    "multiple_mounts": true,
-    "source": "network"
-  },
-
-  "homepage_url": "http://path/to/homepage",
-  "import": [{"id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}],
-  "incognito": "spanning, split, or not_allowed",
-  "input_components": ...,
-  "key": "publicKey",
-  "minimum_chrome_version": "versionString",
-  "nacl_modules": [...],
-  "oauth2": ...,
-  "offline_enabled": true,
-  "omnibox": {
-    "keyword": "aString"
-  },
-
-  "optional_permissions": ["tabs"],
-  "options_page": "options.html",
-  "options_ui": {
-    "chrome_style": true,
-    "page": "options.html"
-  },
-
-  "permissions": ["tabs"],
-  "platforms": ...,
-  "plugins": [...],
-  "requirements": {...},
-  "sandbox": [...],
-  "short_name": "Short Name",
-  "signature": ...,
-  "spellcheck": ...,
-  "storage": {
-    "managed_schema": "schema.json"
-  },
-
-  "system_indicator": ...,
-  "tts_engine": {...},
-  "update_url": "http://path/to/updateInfo.xml",
-  "version_name": "aString",
-  "web_accessible_resources": [...]
+  "browser_action": {
+      "default_title": "Set this page's color.",
+      "default_icon": "image/icon.png",
+      "default_popup": "popup.html"
+  }
 }
