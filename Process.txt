@@ -28,6 +28,9 @@ This is the link to the api script:
 https://apis.google.com/js/client.js
 
 
+Potentially use Materialize collapsible tiles for different charities/locations
+
+
 
 
 
