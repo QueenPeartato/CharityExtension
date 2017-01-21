@@ -1,0 +1,36 @@
+Connect the Google API script to our manifest
+Guide: http://stackoverflow.com/questions/18681803/loading-google-api-javascript-client-library-into-chrome-extension 
+
+There are several solutions here, but the simplest and most universal seems to be connecting the API 
+script to the manifest: 
+  "background": {
+  "scripts": [
+    "background.js",
+    "gapi-client.js"
+  ]
+}), 
+
+this uses a main background script (background.js) to which all of the gapi-client.js is copied (away from it's
+online location) and applied to our manifest. 
+
+ The script in background.js looks like this:
+ 
+ window.gapi_onload = function(){
+  console.log('gapi loaded.', gapi.auth, gapi.client);
+
+  // Do things you want with gapi.auth and gapi.client.
+}
+
+My assumption is that we won't have to do much more with gapi.auth and gapi.client.
+
+This is the link to the api script:
+
+https://apis.google.com/js/client.js
+
+
+
+
+
+
+
+
