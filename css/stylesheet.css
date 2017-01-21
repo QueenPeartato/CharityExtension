@@ -8,3 +8,13 @@ h1, h2, h3, h4, h5, h6{
 p, body, ul, ol{
   font-family: 'Montserrat', sans-serif;
 }
+
+body {
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  background: white;
+  /*establish the size of the window*/
+  width = 400px;
+  height = auto;
+}

@@ -40,7 +40,8 @@ Curation of the data would be the best option for organizing and inputting data
 	- Using API's can bring in content that isn't reputable
 	- USing API's can bring in content that goes against Chrome's regulations
 
+BEGIN:
+Begin with Chrome extension tutorials for building simple extensions
+"Sample extensions for Google Chrome"
 
-
-
-
+Make JSON file with charities in an array for searching 
