@@ -30,8 +30,15 @@ https://apis.google.com/js/client.js
 
 Potentially use Materialize collapsible tiles for different charities/locations
 
+Use Materialize modals for popup ability
 
+Use a github repo in order to cache the data from the IRS website and have the app use this information
+OR
+Have the extension cache the data from the IRS site on install, and then periodically (every 3-4 mo.)
 
+Curation of the data would be the best option for organizing and inputting data
+	- Using API's can bring in content that isn't reputable
+	- USing API's can bring in content that goes against Chrome's regulations
 
 
 
