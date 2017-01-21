@@ -1,0 +1,34 @@
+// Our directory of charities, in JSON format
+
+var charities = [{
+	"name" : "Food & Water Watch",
+	"website" : "http://www.foodandwaterwatch.org",
+	"key" : "chemicals", "water", "food",
+},
+
+{	
+	"name" : "Care.org",
+	"website" : "http://care.org",
+	"key" : "Aleppo", "humanitarian", "refugee", "crisis",
+},
+
+{
+	"name" : "Goodwill",
+	"website" : "http://www.goodwill.org",
+	"key" : "clothes", "clothing", "donate", "shop", "Goodwill",
+},
+
+{
+	"name" : "Seattle Children's Hospital",
+	"website" : "http://www.seattlechildrens.org",
+	"key" : "children", "healthcare", "patients", "family", "child", "medical", 
+},
+
+{
+	"name" : "Seattle Children's Hospital",
+	"website" : "http://www.seattlechildrens.org",
+	"key" : "children", "healthcare", "patients", "family", "child", "medical", 
+},
+
+}];
+
