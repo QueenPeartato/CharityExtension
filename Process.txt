@@ -30,7 +30,8 @@ https://apis.google.com/js/client.js
 
 
 
+BEGIN:
+Begin with Chrome extension tutorials for building simple extensions
+"Sample extensions for Google Chrome"
 
-
-
-
+Make JSON file with charities in an array for searching 
