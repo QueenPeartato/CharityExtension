@@ -53,7 +53,7 @@ var charities = [{
 {
 	"name" : "Acumen",
 	"website" : "http://acumen.org",
-	"key" : "poverty", "poor", "money", "lower class", "leader", 
+	"key" : "poverty", "poor", "money", "lower class", "leader", `
 },
 
 }];
